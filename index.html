@@ -42,9 +42,9 @@
 </head>
 <body class="bg-light_gray">
   <!-- in order to center the div, have a container, use flex items-center justify-center on it and then create another div if you dont want to flex the inner elements-->
-  <div class="flex items-center justify-center h-screen">
-    <div class="bg-white h-auto w-80 rounded-lg shadow-sm">
-      <div class="m-4 rounded-lg overflow-hidden"> <!-- overflow-hidden is required when rounding the images inside a container div to ensure that container box is rounded else 
+  <div role="maincard" class="flex items-center justify-center h-screen">
+    <div role="qrcodecontent" class="bg-white h-auto w-80 rounded-lg shadow-sm">
+      <div role="imagecontent" class="m-4 rounded-lg overflow-hidden"> <!-- overflow-hidden is required when rounding the images inside a container div to ensure that container box is rounded else 
       internal items won't look rounded-->
         <img src="./images/image-qr-code.png" alt="qrcode_frontendMentor"/>
       </div>
@@ -54,7 +54,7 @@
     </div>
   </div>
   
-  <div class="attribution">
+  <div role="footer" class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.linkedin.com/in/abhishek-shubham-634101126/" target="_blank">Abhishek Abhishek</a>.
   </div>
