@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontSize: {
+          'default': '15px',
+          'heading': '22px',
+        },
+        fontWeight: {
+          'thin': '400',
+          'bold': '700'
+        },
+        fontFamily: {
+          'outfit': ['Outfit', 'sans-serif']
+        },
+        extend: {
+          colors: {
+            'white': 'hsl(0, 0%, 100%)',
+            'light_gray': 'hsl(212, 45%, 89%)',
+            'grayish_blue': 'hsl(220, 15%, 55%)',
+            'dark_blue': 'hsl(218, 44%, 22%)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-light_gray">
+
+  <div class="flex items-center justify-center h-screen">
+    <div class="bg-white h-auto w-80 rounded-lg shadow-sm">
+      <div class="m-4 rounded-lg overflow-hidden"> <!-- overflow-hidden is required when rounding the images inside a container div to ensure that container box is rounded else 
+      internal items won't look rounded-->
+        <img src="./images/image-qr-code.png" alt="qrcode_frontendMentor"/>
+      </div>
+      
+      <p class="text-center px-4 py-2 font-outfit font-bold text-heading text-dark_blue leading-tight">Improve your front-end skills by building projects</p>
+      <p class="text-center px-8 py-4 font-outfit text-grayish_blue leading-tight text-default mb-2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/abhishek-shubham-634101126/" target="_blank">Abhishek Abhishek</a>.
+  </div>
+</body>
+</html>
